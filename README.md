@@ -114,6 +114,18 @@ yolo task=detect mode=val model=/runs/detect/train/weights/best.pt data={dataset
 yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source={path to the image u wish to run inference on}
 ```
 
+You can also run prediction on an entire folder containing test images
+```
+yolo task=detect mode=predict model={HOME}/runs/detect/train/weights/best.pt conf=0.25 source={dataset.location}/test/images
+```
+
+## Sample Results
+![result](https://user-images.githubusercontent.com/73134011/235419915-80eff18f-7362-46e0-aab9-2dc408e71f95.jpeg)
+
+![confusion-matrix](https://user-images.githubusercontent.com/73134011/235420063-8e406301-dbe9-4979-ad0b-0fcc08b785fc.png)
+
+![loss](https://user-images.githubusercontent.com/73134011/235420070-4513c8f9-fbbe-4d10-91b5-e795469ed4de.png)
+
 
 
 
